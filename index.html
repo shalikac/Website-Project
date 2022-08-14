@@ -9,6 +9,30 @@
 </head>
 <body>
 
+  <!-- side nav -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav>
+      <ul>
+       <li id='active'><a href="index.html">Home</a></li>
+       <li><a href="fav_games.html">Favourite Games</a></li>
+       <li><a href="fav_colours.html">Favourite Colours</a></li>
+       <li><a href="about.html">About</a></li>
+      </ul>
+     </nav>
+  </div>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.display = "block";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.display = "none";
+    }
+  </script>
+
     <div class="container">
         <h1>a basic layout</h1>
         <h2>section</h2>

@@ -18,11 +18,65 @@ html {
     text-align: center;
 }
 
+/* container */
 .container {
+    display: flex;
+    justify-content: flex-start;
     background-color: white;
     width: 70%;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin: 0 auto */
+    margin: 0 auto; /* center of page */
+    box-shadow: 5px 5px;
 } 
+  .container > div {
+    margin: 10px;
+    padding: 10px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* nav */
+  .sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0D1317;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 4px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #232ED1;
+    display: block;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  /* images */
+  .img {
+    width: 500px;
+    height:300px;
+  }
+  
+  .logo {
+    width: 380px;
+    height:50px;
+  }
