@@ -9,33 +9,18 @@
 </head>
 <body>
 
-  <!-- side nav -->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <nav>
-      <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="france.html">France</a></li>
-       <li><a href="germany.html">Germany</a></li>
-       <li id='active'><a href="uk.html">United Kingdom</a></li>
-      </ul>
-     </nav>
-  </div>
-
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
-    <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.display = "block";
-    }
-    function closeNav() {
-      document.getElementById("mySidenav").style.display = "none";
-    }
-    </script>
+    <!-- navbar -->
+    <ul>
+        <div class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="france.html">France</a></li>
+            <li><a href="germany.html">Germany</a></li>
+            <li><a class="active" href="uk.html">United Kingdom</a></li>
+        </div>
+    </ul>
 
     <centre><h1>United Kingdom Landmarks</h1></centre>
 
-        <!-- content -->
         <div class="container">
             <div>
             <h2>The British Museum</h2>
