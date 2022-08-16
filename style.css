@@ -1,6 +1,7 @@
 h1 {
+    text-align: center;
     font-size: 70px;
-    color: #454d98;
+    color: khaki;
 	font-family: Tahoma,Verdana,Segoe,sans-serif; 
     margin:0px;
 }
@@ -12,25 +13,32 @@ p {
 }
 
 html {
-    background-color: #326273;
+    background-color: honeydew;
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: center;
+    text-align: left;
 }
+
+body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rebeccapurple;
+   }
 
 /* container */
 .container {
     display: flex;
     justify-content: flex-start;
-    background-color: white;
-    width: 70%;
-    max-width: 1000px;
-    margin: 0 auto; /* center of page */
+    background-color: #6564DB;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
     box-shadow: 5px 5px;
-} 
+  }
   .container > div {
-    margin: 10px;
-    padding: 10px;
+    padding: 15px;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -72,11 +80,8 @@ html {
   
   /* images */
   .img {
+    padding: 10px;
+    padding-top: 18px;
     width: 500px;
     height:300px;
-  }
-  
-  .logo {
-    width: 380px;
-    height:50px;
   }
