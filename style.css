@@ -1,29 +1,23 @@
+/* global */
 h1 {
     text-align: center;
     font-size: 70px;
-    color: khaki;
+    color: lightblue;
 	font-family: Tahoma,Verdana,Segoe,sans-serif; 
     margin:0px;
-}
-p {
-    margin-top: 0px;
-    margin-bottom: 1px;
-    line-height: 1.4;
 }
 body {
     margin: 0;
 }
 html {
-    background-color: honeydew;
+    background-color: #fefae0;
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: left;
 }
-
 /* images */
 .img {
     padding: 10px;
-    padding-top: 18px;
+    padding-top: 5px;
     width: 500px;
     height:300px;
 }
@@ -32,31 +26,43 @@ html {
 .container {
     display: flex;
     justify-content: flex-start;
-    background-color: #6564DB;
+    background-color: #d4a373;
     width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    box-shadow: 5px 5px;
+    box-shadow: 10px 10px 5px gray;
 }
 .container > div {
     padding: 15px;
-    font-size: medium;
+    font-size: small;
+    line-height: 1.4;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+/* Responsive layout- makes a one column-layout*/
+@media (max-width: 500px) {
+    .container {
+      flex-direction: column;
+    }
 }
 
 /* nav bar */
 .navbar {
     list-style-type: none;
     overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    background-color: #dabd90;
     width: 100%;
     position:fixed;
     top: 0;
     left: 0;
 }
-
 li {
+    float: right;
+    border-right:1px solid #d4a373;
+    border-left:1px solid #d4a373;
+}
+li:first-child {
     float: left;
 }
 li a {
@@ -73,28 +79,18 @@ li a.active {
     color: white;
     background-color: lightblue;
 }
+
 div.content {
-    margin-left: 25%;
+    margin-left: 50%;
     padding: 1px 16px;
     height: 1000px;
 }
 
-@media screen and (max-width: 900px) {
-    ul.sidenav {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    ul.sidenav li a {
-      float: left;
-      padding: 15px;
-    }
-    div.content {margin-left: 0;}
-}
-  
-@media screen and (max-width: 400px) {
-    ul.sidenav li a {
-      text-align: center;
-      float: none;
-    }
+.bg {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    background-color: #666;
 }
